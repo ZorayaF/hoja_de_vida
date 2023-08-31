@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;   
+}
+
+.pageGrid{
+    display: grid;
+    grid-template-areas: "cab cab"
+    "bar cont"
+    "foot foot";
+
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr 10fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.cabecera{
+    background-color: #c9284f;
+    color: #ffffff;
+    grid-area: cab;
+}
+.barraLateral{
+    background-color: #ffb072;
+    color: #000000;
+    grid-area: bar;
+}
+.contenido{
+    background-color: #ffe3b3;
+    grid-area: cont;
+}
+.piePagina{
+    background-color: #c9284f;
+    color: #ffffff;
+    grid-area: foot;
+}

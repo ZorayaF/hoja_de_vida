@@ -1,17 +1,19 @@
 *{
-    margin: 0px;
+    margin: 5px;
     padding: 0px;   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 15px;
 }
 
 .pageGrid{
     display: grid;
-    grid-template-areas: "cab cab"
+    grid-template-areas: "bar cab"
     "bar cont"
     "foot foot";
 
-    grid-template-columns: 1fr 7fr;
-    grid-template-rows: 1fr 10fr 1fr;
-    width: 100vw;
+    grid-template-columns: 3fr 7fr;
+    grid-template-rows: 6fr 10fr 1fr;
+    width: 98vw;
     height: 100vh;
     
 }
@@ -20,18 +22,37 @@
     background-color: #c9284f;
     color: #ffffff;
     grid-area: cab;
+    padding: 30px;
 }
 .barraLateral{
     background-color: #ffb072;
     color: #000000;
     grid-area: bar;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+    
+    
 }
+.barraLateral h2{
+    color: #f5f4e9;
+}
+
 .contenido{
     background-color: #ffe3b3;
     grid-area: cont;
+    padding: 30px 80px 30px 80px;
+    
 }
 .piePagina{
     background-color: #c9284f;
     color: #ffffff;
     grid-area: foot;
+    display: grid;
+    align-content: center;
+    text-align: center;
 }
+
+
+
